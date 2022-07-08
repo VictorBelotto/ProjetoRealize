@@ -95,11 +95,14 @@ strong{
 
 .caixa__mapa{
     display: flex;
+    justify-content: center;
 }
 
 .mapa{
+   
     padding: 2em 0;
     width: 100vw;
+    height: 250px;
     max-width: 700px;
 }
 
