@@ -1,0 +1,228 @@
+:root{
+    --Fundo-Vanila:rgb(246, 240, 242);
+    --Fundo-Cabecalho:rgb(20, 22, 38);
+    --Azul-Principal:rgb(0, 0, 200);
+    --Laranja-Principal:rgb(255, 136, 0);
+}
+
+body {
+    background-color:var(--Fundo-Vanila);
+	font-family: 'Open Sans', sans-serif;
+}
+/*font-family: 'Montserrat', sans-serif;
+
+*/
+
+
+.cabecalho__realize{
+    font-size: 1.5rem;
+    justify-self: center;
+    color: var(--Laranja-Principal);
+    font-weight: 400;
+}
+.cabecalho {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 35px;
+    padding:20px;
+    background-color: var(--Fundo-Cabecalho);
+}
+header img{
+    height: 40px;
+    justify-self: end;   
+}
+.icone__menu{
+    font-size: 1.5rem;
+    color:rgb(255, 136, 0);
+    background-color: var(--Fundo-Cabecalho);
+    border: none;
+}
+.caixa {
+    position: relative;
+    width: 90%;
+    margin: 0 auto 0;
+    
+}
+
+
+
+
+/* Corpo da Pagina*/
+
+.border__texto{
+    border-bottom: 1px solid rgba(20, 22, 38, 50);
+    padding-top: 2rem;
+    
+}
+
+strong{
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.titulo__principal{
+    color: var(--Azul-Principal);
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.8rem 0 1.8rem ;
+}
+
+.texto__sobre  {
+    font-size: 1rem;
+    color: black;
+   
+}
+
+/*Beneficios*/
+
+.titulo__beneficio {
+    text-align: left;
+    padding: 2em 0 1em;
+    color: var(--Azul-Principal);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.texto__beneficio{
+    font-size: 0.9rem;
+    color: black;
+}
+
+.caixa__mapa{
+    display: flex;
+}
+
+.mapa{
+    padding: 2em 0;
+    width: 100vw;
+    max-width: 700px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    background-color: var(--Fundo-Cabecalho);
+    color:var(--Laranja-Principal);
+    position: relative;
+}
+
+.redes__sociais-itens{
+    font-size: 1rem;
+    padding: 0 0.8rem 0 0.4rem;
+
+    
+       
+}
+
+
+    
+/*Menu lateral*/
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--Fundo-Cabecalho);
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    left: -100vw;
+    transition: .4000s;
+    z-index: 1;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .4000s;
+}
+
+.conteudo__menu-lateral{
+    text-decoration: none;
+    color: var(--Laranja-Principal);
+    padding: 0.6rem 0 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/*Display passo a passo*/
+
+.passo_a_passo{
+    display: grid;
+    grid-template-columns: 1fr auto ;
+    grid-template-rows: auto auto auto auto;
+}
+
+.passo_lado-esquerdo{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+   
+}
+
+.passo_lado-direito{
+    height: 180px;
+    width: 100%;
+    grid-column: 2;
+    
+    
+}
+
+.img__tamanho{
+    width: 120px;
+    height: 105px;
+    
+}
+
+.titulo__passoapasso{
+    color: var(--Azul-Principal);
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 10px 0 15px;
+}
+
+.texto__passoapasso{
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+}
+
+.botao__padrao-passo{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--Laranja-Principal);
+    
+}
+
+
+.posicao__passo1{
+    grid-row: 1;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.posicao__passo2{
+    grid-row: 2;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.posicao__passo3{
+    grid-row: 3;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.posicao__passo4{
+    grid-row: 4;
+    height: auto;
+    padding-bottom: 15px;
+}
