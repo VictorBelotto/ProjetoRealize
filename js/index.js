@@ -6,4 +6,3 @@ botaoMenu.addEventListener('click', () => {
 })
 
 
-var imagens = ["../img/"];
