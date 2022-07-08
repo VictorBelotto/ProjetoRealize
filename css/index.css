@@ -161,7 +161,7 @@ footer{
 .passo_a_passo{
     display: grid;
     grid-template-columns: 1fr auto ;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto*4;
 }
 
 .passo_lado-esquerdo{
@@ -210,22 +210,32 @@ footer{
     grid-row: 1;
     height: auto;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .posicao__passo2{
     grid-row: 2;
     height: auto;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .posicao__passo3{
     grid-row: 3;
     height: auto;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .posicao__passo4{
     grid-row: 4;
     height: auto;
     padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.border__passo{
+    grid-column: 1/span2;
+    border-bottom: 0.5px solid rgba(20, 22, 38, 50);
+    padding: 2rem 0 5rem;
 }
