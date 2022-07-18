@@ -1,0 +1,90 @@
+.cabecalho {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    height: 35px;
+    padding:20px;
+    background-color: var(--Fundo-Cabecalho);
+    position: relative;
+}
+
+.logo__escrito{
+    font-size: 2rem;
+    justify-self: center;
+    color: var(--Laranja-Principal);
+    font-weight: 400;
+}
+
+.logo{
+    height: 40px;
+    justify-self: end;   
+}
+
+.icone__menu{
+    font-size: 2rem;
+    color:rgb(255, 136, 0);
+    background-color: var(--Fundo-Cabecalho);
+
+}
+
+/*Menu lateral*/
+#menu{
+    display: none;
+}
+.menu-lateral {
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--Fundo-Cabecalho);
+    width: 75vw;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top:100%;
+    left: 0;
+
+    
+}
+
+.icone__menu:checked~.menu-lateral{
+    display: flex;
+   
+}
+
+.conteudo__menu-lateral{
+    padding: 0.5rem;
+}
+
+.item__menu-lateral{
+    padding: 0.8rem 0;
+}
+.menu__lateral-link{
+    text-decoration: none;
+    color: var(--Laranja-Principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 5rem 0;
+}
+
+
+/*Rodape*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    background-color: var(--Fundo-Cabecalho);
+    color:var(--Laranja-Principal);
+    position: relative;
+}
+
+.redes__sociais-itens{
+    font-size: 1rem;
+    padding: 0 0.8rem 0 0.4rem;
+
+    
+       
+}
+
